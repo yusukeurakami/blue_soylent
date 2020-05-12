@@ -10,12 +10,39 @@ blue_soylent contains a repo to control a Blue robotic arm.
 - Works with Mac, Windows, and Linux
 - Works in Jupyter Notebooks
 
-### Installing with pip
+### 1. Setup basic blue environment
+
+### 2. Install blue_interface with pip
 ```
 git clone https://github.com/berkeleyopenarms/blue_interface.git
 cd blue_interface
 pip install -e .
 ```
+### 3. Install Leap motion
+
+Follow these.
+
+https://forums.leapmotion.com/t/linux-install-of-sdk-fails/5158/6
+
+https://github.com/robotlearn/pyrobolearn/blob/master/pyrobolearn/tools/interfaces/sensors/install_leapmotion_ubuntu.txt
+
+### 4. Boot robot
+
+Run either of follows and boot the real robot or the one in Gazebo.
+
+#### Real-robot
+`roslaunch blue_bringup right.launch param_file:=/path/to/blue_configs/blue_right_v2.yaml`
+
+#### Gazebo
+`roslaunch blue_gazebo right.launch`
+
+### 5. run Example scripts (`blue_soylent/examples`)
+  - IK control
+    `python leap_controller.py --IK`
+
+  - Tele-operation
+    `python leap_controller.py`
+
 
 ### Examples (`blue_interface/examples`)
   - `gripper_controller.py` - An example of opening and closing Blue's gripper.
