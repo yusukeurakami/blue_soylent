@@ -12,6 +12,8 @@ blue_soylent contains a repo to control a Blue robotic arm.
  <a href="https://www.youtube.com/watch?v=i4gfILPBqGU" target="_blank"><img src="http://img.youtube.com/vi/i4gfILPBqGU/0.jpg" alt="BLUE_IK" width="240" height="180" border="10" /></a>
 </p>
 
+# Installation Procedure
+
 ### 1. Setup basic blue environment
 
 https://github.com/berkeleyopenarms/blue_core
