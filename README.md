@@ -5,16 +5,12 @@ blue_soylent contains a repo to control a Blue robotic arm.
 
 # Control examples
 
+## 1.
+
 <p align="center">
  <a href="https://www.youtube.com/watch?v=d6HUE99mb6M" target="_blank"><img src="http://img.youtube.com/vi/d6HUE99mb6M/0.jpg" alt="BLUE_SOYLENT" width="240" height="180" border="10" /></a>
- <a href="https://www.youtube.com/watch?v=i4gfILPBqGU" target="_blank"><img src="http://img.youtube.com/vi/i4gfILPBqGU/0.jpg" alt="BLUE_SOYLENT" width="240" height="180" border="10" /></a>
-  <img width="345" height="304" src="./imgs/doorgym_video.gif">
-  <img width="345" height="304" src="./imgs/baxter.gif">
+ <a href="https://www.youtube.com/watch?v=i4gfILPBqGU" target="_blank"><img src="http://img.youtube.com/vi/i4gfILPBqGU/0.jpg" alt="BLUE_IK" width="240" height="180" border="10" /></a>
 </p>
-
-<a href="https://www.youtube.com/watch?v=d6HUE99mb6M" target="_blank"><img src="http://img.youtube.com/vi/d6HUE99mb6M/0.jpg" alt="BLUE_SOYLENT" width="240" height="180" border="10" /></a>
-
-<a href="https://www.youtube.com/watch?v=i4gfILPBqGU" target="_blank"><img src="http://img.youtube.com/vi/i4gfILPBqGU/0.jpg" alt="BLUE_SOYLENT" width="240" height="180" border="10" /></a>
 
 ### 1. Setup basic blue environment
 
