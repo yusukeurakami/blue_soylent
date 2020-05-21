@@ -14,13 +14,13 @@ blue_soylent contains a repo to control a Blue robotic arm.
 
 # Installation Procedure
 
-### 1. Setup basic blue environment
+### 0. Clone this repo
+git clone https://github.com/yusukeurakami/blue_soylent.git
 
+### 1. Setup basic blue environment
 https://github.com/berkeleyopenarms/blue_core
 
-
 Guide
-
 https://docs.google.com/document/d/1MnyViCi9Tt03B9-3wZsePXXlKf7XiXHs0o6_c8z7at4/edit?usp=sharing
 
 ### 2. Install blue_interface with pip
@@ -30,7 +30,6 @@ cd blue_interface
 pip install -e .
 ```
 ### 3. Install Leap motion
-
 Follow these.
 
 https://forums.leapmotion.com/t/linux-install-of-sdk-fails/5158/6
@@ -38,7 +37,6 @@ https://forums.leapmotion.com/t/linux-install-of-sdk-fails/5158/6
 https://github.com/robotlearn/pyrobolearn/blob/master/pyrobolearn/tools/interfaces/sensors/install_leapmotion_ubuntu.txt
 
 ### 4. Boot robot
-
 Run either of follows and boot the real robot or the one in Gazebo.
 
 #### Real-robot
