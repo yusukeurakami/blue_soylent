@@ -5,7 +5,8 @@ blue_soylent contains a repo to control a Blue robotic arm.
 
 # Control examples
 
-[![BLUE_SOYLENT](https://img.youtube.com/vi/d6HUE99mb6ME/0.jpg)](https://www.youtube.com/watch?v=d6HUE99mb6M)
+[![BLUE_SOYLENT](https://img.youtube.com/vi/d6HUE99mb6M/0.jpg)](https://www.youtube.com/watch?v=d6HUE99mb6M)
+
 [![BLUE_IK](https://img.youtube.com/vi/i4gfILPBqGU/0.jpg)](https://www.youtube.com/watch?v=i4gfILPBqGU)
 
 ### 1. Setup basic blue environment
