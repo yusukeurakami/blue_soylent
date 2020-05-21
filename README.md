@@ -3,12 +3,10 @@ blue_soylent contains a repo to control a Blue robotic arm.
 
  without directly interfacing with ROS. It uses [rosbridge](https://github.com/RobotWebTools/rosbridge_suite) to communicate with Blue's ROS-based control system over a network connection.
 
-### Why use blue_interface?
-- No dependency on ROS
-- Easy to connect to multiple robots
-- Works with both Python 2 and 3
-- Works with Mac, Windows, and Linux
-- Works in Jupyter Notebooks
+# Control examples
+
+[![BLUE_SOYLENT](https://img.youtube.com/vi/d6HUE99mb6ME/0.jpg)](https://www.youtube.com/watch?v=d6HUE99mb6M)
+[![BLUE_IK](https://img.youtube.com/vi/i4gfILPBqGU/0.jpg)](https://www.youtube.com/watch?v=i4gfILPBqGU)
 
 ### 1. Setup basic blue environment
 
