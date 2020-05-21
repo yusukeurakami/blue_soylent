@@ -5,7 +5,7 @@ blue_soylent contains a repo to control a Blue robotic arm.
 
 # Control examples
 
-## 1.
+1. Tele-operation, 2. Inverse Kinematic
 
 <p align="center">
  <a href="https://www.youtube.com/watch?v=d6HUE99mb6M" target="_blank"><img src="http://img.youtube.com/vi/d6HUE99mb6M/0.jpg" alt="BLUE_SOYLENT" width="240" height="180" border="10" /></a>
