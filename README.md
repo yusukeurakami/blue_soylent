@@ -12,6 +12,13 @@ blue_soylent contains a repo to control a Blue robotic arm.
 
 ### 1. Setup basic blue environment
 
+https://github.com/berkeleyopenarms/blue_core
+
+
+Guide
+
+https://docs.google.com/document/d/1MnyViCi9Tt03B9-3wZsePXXlKf7XiXHs0o6_c8z7at4/edit?usp=sharing
+
 ### 2. Install blue_interface with pip
 ```
 git clone https://github.com/berkeleyopenarms/blue_interface.git
@@ -43,12 +50,6 @@ Run either of follows and boot the real robot or the one in Gazebo.
   - Tele-operation
     `python leap_controller.py`
 
-
-### Examples (`blue_interface/examples`)
-  - `gripper_controller.py` - An example of opening and closing Blue's gripper.
-  - `inverse_kinematics.py` - An example of sending Blue an end effector pose command.
-  - `print_status.py` - An example of reading state and printing values from Blue.
-  - `zero_position.py` - An example of sending Blue a command in joint space.
 
 ### API Documentation
 https://blue-interface.readthedocs.io/en/latest/

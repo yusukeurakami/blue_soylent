@@ -6,12 +6,19 @@ from blue_interface import BlueInterface
 import numpy as np
 import time
 import sys
+import argparse
 
 import Leap
 from utils.rotations import quat2euler, euler2quat, mat2euler
 from utils.leap_listener import SampleListener
 
 import matplotlib.pyplot as plt
+
+
+parser = argparse.ArgumentParser(description='switch the control mode')
+parser.add_argument('--IK', default=False, action='store_true',
+                    help='switch to IK-control')
+args = parser.parse_args()
 
 side = "right"
 ip = "127.0.0.1"
@@ -38,9 +45,9 @@ while True:
     # print "Frame id: %d, timestamp: %d, hands: %d, fingers: %d, tools: %d, gestures: %d" % (
     #         frame.id, frame.timestamp, len(frame.hands), len(frame.fingers), len(frame.tools), len(frame.gestures()))
 
-    IK = False
+    # IK = False
     ## IK approach
-    if IK:
+    if args.IK:
         if  "Right hand" in hands_data.keys():
             hand_data = hands_data["Right hand"]
             pos = hand_data['palm_position']
@@ -129,33 +136,4 @@ while True:
 
 
 plt.show()
-
-# # Compute IK solution
-# target_position = [0.0, -0.7, 0.2] # x, y, z
-# to = list(euler2quat([0, 0, -1.57])) # w, x, y, z
-# target_orientation = to[1:] + to[:1]
-# start = blue.inverse_kinematics(target_position, target_orientation)
-
-# # Send command to robot
-# blue.set_joint_positions(start, duration=5)
-
-# # Wait for system to settle
-# time.sleep(1)
-
-# # Send command to robot
-# blue.set_joint_positions([0.0, -2.310, 1.570796, -0.750492, -1.570796, 0.0, 0.0], duration=5)
-
-# # Wait for system to settle
-# time.sleep(5)
-
-# # Print results
-# joint_positions = blue.get_joint_positions()
-# pose = blue.get_cartesian_pose()
-# # print_aligned = lambda left, right: print("{:30} {}".format(left, np.round(right, 4)))
-# print_aligned("Target joint positions: ", target_joint_positions)
-# print_aligned("End joint positions: ", joint_positions)
-# print_aligned("Target cartesian position:", target_position)
-# print_aligned("End cartesian position:", pose["position"])
-# print_aligned("Target orientation:", target_orientation)
-# print_aligned("End orientation:", pose["orientation"])
 
